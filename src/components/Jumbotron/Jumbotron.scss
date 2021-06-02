@@ -1,0 +1,51 @@
+@import "../../App.scss";
+
+.jumbo {
+  align-items: center;
+  animation-duration: 0.4s;
+  animation-name: appear;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 -10rem 0;
+  padding: 1rem;
+
+  .jumbo__title {
+    color: $white;
+    font-weight: 300;
+  }
+
+  .jumbo__text {
+    color: $white;
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+
+  .jumbo__apply-button {
+    background-color: $white;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    margin: 1.2rem 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 3px 3px 10px 0.2px black;
+    }
+  }
+
+  .jumbo__image {
+    height: 220px;
+    width: 240px;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
