@@ -1,0 +1,17 @@
+@import "../../App.scss";
+
+.user-searchbar {
+  margin: 2.5rem 0;
+  text-align: center;
+  .search-input {
+    background-image: url("../../assets/images/magnifying-glass.png");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+
+    border: 2px solid $midnight-blue;
+    font-size: 1.1rem;
+    outline: none;
+    padding: 1rem 1rem 1rem 3rem;
+    width: 17rem;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../App.scss";
+
+.user-table {
+  animation-duration: 0.4s;
+  animation-name: appear;
+  box-shadow: 7px 6px 16px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 0.2rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 1rem 1.6rem;
+  max-height: 430px;
+  transition: all 0.3s ease;
+  .user-table__header {
+    background-color: $black;
+    color: $white;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .user-table {
+    margin: 1rem auto;
+    max-width: 720px;
+  }
+}
