@@ -2,9 +2,10 @@ import React from "react";
 import "./Footer.scss";
 import FooterIndex from "../FooterIndex/FooterIndex";
 import FooterSearchBar from "../FooterSearchbar/FooterSearchbar";
-import facebookLogo from "../../assets/images/facebook.png";
-import instagramLogo from "../../assets/images/instagram.png";
-import twitterLogo from "../../assets/images/twitter.png";
+import facebookLogo from "../../assets/images/facebook.svg";
+import instagramLogo from "../../assets/images/instagram.svg";
+import twitterLogo from "../../assets/images/twitter.svg";
+
 const Footer = () => {
   const footerIndexContent = [
     {
@@ -81,21 +82,21 @@ const Footer = () => {
           <span className="section__name">Support</span>
         </div>
         <div className="socials">
-          <a href="#">
+          <a rel="noreferrer" target="_blank" href="https://www.google.com/">
             <img
               alt="social-logo"
               src={facebookLogo}
               className="socials__icon"
             />
           </a>
-          <a href="#">
+          <a rel="noreferrer" target="_blank" href="https://www.google.com/">
             <img
               alt="social-logo"
               src={instagramLogo}
               className="socials__icon"
             />
           </a>
-          <a href="#">
+          <a rel="noreferrer" target="_blank" href="https://www.google.com/">
             <img
               alt="social-logo"
               src={twitterLogo}
