@@ -1,0 +1,62 @@
+@import "../../App.scss";
+
+.footer {
+  background-color: $soft-gray;
+  border-radius: 50% 50% 0% 0% / 3rem 3rem 2rem 2rem;
+  padding: 4rem 0 0.4rem 0;
+  transition: all 0.4s ease;
+  .footer__round {
+    border-radius: 100px / 50px;
+  }
+
+  .footer__index {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+    .section {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      .section__name {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 0 0 1rem 0;
+        border-bottom: 3px solid $purple;
+      }
+    }
+
+    .socials {
+      margin: 0.5rem 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      .socials__icon {
+        color: $midnight-blue;
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 720px) {
+  .footer {
+    .footer__index {
+      border-bottom: 2px solid $gray;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
+
+    .footer__section {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+.footer-searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+
+  .footer-searchbar__input {
+    border: 1px solid $gray;
+    background-image: url("../../assets/images/magnifying-glass.png");
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.7rem 2.5rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .footer-searchbar {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
