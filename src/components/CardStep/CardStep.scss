@@ -2,13 +2,12 @@
 
 .card-step {
   align-items: center;
+  box-shadow: 7px 6px 16px -15px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
   padding: 0.8rem;
   transition: all 0.3s ease;
-
-  box-shadow: 7px 6px 16px -15px rgba(0, 0, 0, 0.75);
 
   .card-step__icon {
     background-color: $gray;
