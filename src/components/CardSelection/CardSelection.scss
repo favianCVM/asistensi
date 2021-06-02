@@ -1,0 +1,28 @@
+@import "../../App.scss";
+
+.card-selection {
+  margin: 4.5rem 0 1rem 0;
+  padding: 1rem;
+
+  .card-selection__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  .card-selection__message {
+    text-align: center;
+  }
+
+  .card-selection__steps {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .card-selection {
+    .card-selection__steps {
+      flex-direction: row;
+    }
+  }
+}
